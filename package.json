@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A simple script to test the Hugging Face API",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,11 @@
   "dependencies": {
     "@huggingface/agents": "^0.0.5",
     "@huggingface/hub": "^1.1.2",
-    "@huggingface/inference": "^3.12.0"
+    "@huggingface/inference": "^3.12.0",
+    "dotenv": "^16.5.0"
   },
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "typescript": "^5.8.3"
   }
 }
